@@ -1,0 +1,10 @@
+<h2> Name: <%= @employee.name%></h2>
+<h3> 
+  Project: <%= @employee.project%>
+</h3>
+<p>Skills: <%= @employee.skills%></p>
+<p> Salary: <%= @employee.salary%></p>
+<p> Leave: <%= @employee.total_leave%></p>
+<p>Update: <%= @employee.leave_update%></p>
+
+<%= link_to "Edit", edit_employee_path %>

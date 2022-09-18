@@ -1,0 +1,56 @@
+<h1>New Employee</h1>
+
+<%= form_with model: @employee do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% @employee.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :skills %><br>
+    <%= form.text_area :skills %><br>
+    <% @employee.errors.full_messages_for(:skills).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :project %><br>
+    <%= form.text_area :project %><br>
+    <% @employee.errors.full_messages_for(:project).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :salary %><br>
+    <%= form.text_area :salary %><br>
+    <% @employee.errors.full_messages_for(:salary).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :total_leave %><br>
+    <%= form.text_area :total_leave %><br>
+    <% @employee.errors.full_messages_for(:total_leave).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :leave_update %><br>
+    <%= form.text_area :leave_update %><br>
+    <% @employee.errors.full_messages_for(:leave_update).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+

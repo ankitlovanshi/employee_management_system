@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  skills: MyText
+  project: MyString
+  salary: 1
+  total_leave: 1
+  leave_update: MyText
+
+two:
+  name: MyString
+  skills: MyText
+  project: MyString
+  salary: 1
+  total_leave: 1
+  leave_update: MyText
